@@ -9,14 +9,18 @@
     <Grid>
         <DockPanel>
             <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File"/>
-                    <MenuItem Header="_New"/>
-                    <MenuItem Header="_Open"/>
-                    <MenuItem Header="_Save"/>
                 <MenuItem Header="_File">
                     <MenuItem Header="_New"/>
                     <MenuItem Header="_Open"/>
                     <MenuItem Header="_Save"/>
+                    <Separator/>
+                    <MenuItem Header="_Exit"/>
+                </MenuItem>
+                <MenuItem Header="_Edit">
+                    <MenuItem Header="_Copy"/>
+                    <MenuItem Header="_Paste"/>
+                    <MenuItem Header="_Delete"/>
+
                 </MenuItem>
             </Menu>
         </DockPanel>
