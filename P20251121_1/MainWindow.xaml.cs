@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,16 @@ namespace P20251121_1
         {
             Window window = new Window();
             window.Show();
+        }
+        private void Open_window(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.ShowDialog();
+        }
+        private void Save_dialog(object sender, RoutedEventArgs e)
+        {
+           SaveFileDialog dialog = new SaveFileDialog();
+            dialog.ShowDialog();
         }
     }
 }
