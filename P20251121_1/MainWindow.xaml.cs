@@ -28,5 +28,11 @@ namespace P20251121_1
         {
             Close();
         }
+
+        private void New_window(object sender, RoutedEventArgs e)
+        {
+            Window window = new Window();
+            window.Show();
+        }
     }
 }
