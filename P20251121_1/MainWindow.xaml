@@ -13,6 +13,11 @@
                     <MenuItem Header="_New"/>
                     <MenuItem Header="_Open"/>
                     <MenuItem Header="_Save"/>
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New"/>
+                    <MenuItem Header="_Open"/>
+                    <MenuItem Header="_Save"/>
+                </MenuItem>
             </Menu>
         </DockPanel>
     </Grid>
