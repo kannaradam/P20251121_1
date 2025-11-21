@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,8 +33,8 @@ namespace P20251121_1
 
         private void New_window(object sender, RoutedEventArgs e)
         {
-            Window window = new Window();
-            window.Show();
+            FileStream f = new FileStream("proba.txt", FileMode.Create);
+            f.Close();
         }
         private void Open_window(object sender, RoutedEventArgs e)
         {
