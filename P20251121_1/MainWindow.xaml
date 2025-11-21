@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <DockPanel>
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
@@ -23,6 +27,8 @@
 
                 </MenuItem>
             </Menu>
+            <TextBox x:Name="textBox" TextWrapping="Wrap" Text="textbox" Width="500"/>
         </DockPanel>
+    
     </Grid>
 </Window>

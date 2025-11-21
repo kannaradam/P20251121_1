@@ -40,6 +40,7 @@ namespace P20251121_1
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.ShowDialog();
+            textBox.Text = File.ReadAllText(dialog.FileName);
         }
         private void Save_dialog(object sender, RoutedEventArgs e)
         {
